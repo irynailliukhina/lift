@@ -1,8 +1,5 @@
 <?php
 
-interface lift {
-    public $floor;
-    public $door;
-    public function move();
+interface elevator {
     public function pickUp($onFloor, $toFloor);
 }
