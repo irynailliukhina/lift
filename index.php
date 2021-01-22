@@ -1,13 +1,11 @@
 <?php
 
-require_once "lift.php";
+require_once "Lift.php";
 
 
 $lift = new Lift() ;
-$lift->pickUp(10, 3);
+$lift->moveFromTo(3, 10);
 
-
-
-
-
+$maxWeight = $lift->getMaxWeight();
+echo "<br/>".$maxWeight;
 
